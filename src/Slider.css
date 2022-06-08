@@ -1,0 +1,11 @@
+.carousel {
+    height: 280px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.carousel img {
+    height: 280px;
+    object-position: center;
+    object-fit: cover;
+}

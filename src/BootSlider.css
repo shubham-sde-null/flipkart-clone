@@ -1,0 +1,12 @@
+.carousel {
+    /* border: 2px solid red; */
+    height: 280px;
+    margin: 0 3px;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}

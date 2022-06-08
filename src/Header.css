@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    height: 56px;
+    /* border: 2px solid red; */
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(40, 116, 240);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo>img {
+    width: 160px;
+    height: 90px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: 50px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    /* border: 1px solid black; */
+    margin-left: -100px;
+}
+
+.header__nav div {
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    width: 530px;
+    margin-left: -190px;
+    /* border: 1px solid red; */
+}
+
+.header__search>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding-left: 14px;
+}
+
+.header__search>input::placeholder {
+    color: gray;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.header__searchIcon {
+    background-color: white;
+    /* border: 2px solid green; */
+    height: 30px !important;
+    margin-left: -5px;
+    border-radius: 2px;
+    color: rgb(40, 116, 240);
+    padding-right: 3px;
+}
+
+
+/* Navbar items cursor pointer */
+
+.header__login {
+    cursor: pointer;
+}
+
+.header__becomeASeller {
+    cursor: pointer;
+}
+
+.header__more {
+    cursor: pointer;
+}
+
+.header__cart {
+    cursor: pointer;
+}
+
+.header__cart>span {
+    padding-left: 7px;
+    /* border: 1px solid red; */
+}
