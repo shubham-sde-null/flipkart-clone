@@ -6,6 +6,17 @@
     color: rgb(30, 28, 28);
 }
 
+.actualProducts>button {
+    background-color: rgb(255, 159, 0);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid;
+    border-color: rgb(230, 145, 10) rgb(250, 170, 40) rgb(128, 81, 6);
+    margin-bottom: 15px;
+    outline: none;
+}
+
 .actualProduct__title {
     color: rgb(33, 32, 32);
     font-weight: 500;

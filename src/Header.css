@@ -84,9 +84,22 @@
 
 .header__cart {
     cursor: pointer;
+    color: white;
 }
 
 .header__cart>span {
     padding-left: 7px;
     /* border: 1px solid red; */
+}
+
+.header__navLogin,
+.header__navBecomeSeller,
+.header__navMore,
+.header__navCart {
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+
+.header a {
+    text-decoration: none;
 }
