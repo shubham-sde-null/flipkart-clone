@@ -1,4 +1,5 @@
 import React from "react";
+import "./CartProducts.css";
 import { useStateValue } from "./StateProvider";
 function CartProducts({ image, title, price }) {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -10,13 +11,18 @@ function CartProducts({ image, title, price }) {
   };
   return (
     <div className="cartProduct">
-      <img src={image} alt="" />
-      <p className="cartProduct__title">{title}</p>
-      {/* {title ? <p className="product__price">From ${price}</p> : ""} */}
-      <p className="cartProduct__discount">From {price}</p>
-      <button className="cartProduct__button" onClick={removeFromBasket}>
-        Remove From Basket
-      </button>
+      <div className="cartProduct__image">
+        <img src={image} alt="" />
+      </div>
+      <div className="cartProduct__info">
+        <p className="cartProduct__title">{title}</p>
+        {/* {title ? <p className="product__price">From ${price}</p> : ""} */}
+        <p className="cartProduct__price">₹ {price}</p>
+        <p className="cartProduct__stock">In Stock</p>
+        <button className="cartProduct__button" onClick={removeFromBasket}>
+          Remove From Cart
+        </button>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./Login.css";
 import { auth } from "./firebase.js";
 import { useNavigate } from "react-router-dom";
+// import { useStateValue } from "./StateProvider";
+
 function Login() {
+  // const [{ user }, dispatch] = useStateValue();
   const history = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,18 +33,18 @@ function Login() {
       <div className="login__container">
         <div className="login__left">
           <div>
-            <h2>Login</h2>
-          </div>
+            <h2> Login </h2>{" "}
+          </div>{" "}
           <div>
-            <p>Get access to your Orders, Wishlist and Recommendations</p>
-          </div>
+            <p> Get access to your Orders, Wishlist and Recommendations </p>{" "}
+          </div>{" "}
           <div>
             <img
               src="https://www.linkpicture.com/q/loginPhoto.png"
               alt="loginphoto"
             />
-          </div>
-        </div>
+          </div>{" "}
+        </div>{" "}
         <div className="login__right">
           <form>
             <div className="login__userName">
@@ -51,8 +54,8 @@ function Login() {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-              />
-            </div>
+              />{" "}
+            </div>{" "}
             <div className="login__userPassword">
               <input
                 type="password"
@@ -60,33 +63,33 @@ function Login() {
                 onChange={(e) => {
                   setPassword(e.target.value);
                 }}
-              />
-            </div>
+              />{" "}
+            </div>{" "}
             <div className="login_termsCondition">
               <p>
-                By continuing, you agree to Flipkart's <span>Terms of Use</span>{" "}
-                and <span>Privacy Policy</span>.
-              </p>
-            </div>
+                By continuing, you agree to Flipkart 's{" "}
+                <span>Terms of Use</span> and <span> Privacy Policy </span>.{" "}
+              </p>{" "}
+            </div>{" "}
             <div className="login__button">
               <button type="submit" onClick={signIn}>
-                Login
-              </button>
-            </div>
+                Login{" "}
+              </button>{" "}
+            </div>{" "}
             <div className="login__or">
-              <p>Or</p>
-            </div>
+              <p> Or </p>{" "}
+            </div>{" "}
             <div className="login__otp">
-              <button>Request OTP</button>
-            </div>
+              <button> Request OTP </button>{" "}
+            </div>{" "}
             <div className="login__createAccount">
               <button type="submit" onClick={register}>
-                New To Flipkart?Create an account
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+                New To Flipkart ? Create an account{" "}
+              </button>{" "}
+            </div>{" "}
+          </form>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 }

@@ -89,6 +89,10 @@ function Footer() {
           Help Center
         </p>
         <p>&copy;2007-2022 Flipkart.com</p>
+        <img
+          src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg"
+          alt=""
+        />
       </div>
     </div>
   );

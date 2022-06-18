@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: rgb(40, 116, 240);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -37,8 +37,10 @@
 .header__search {
     display: flex;
     align-items: center;
-    width: 530px;
-    margin-left: -190px;
+    width: 510px;
+    /* flex: 1; */
+    /* flex: 1; */
+    /* margin-left: -190px; */
     /* border: 1px solid red; */
 }
 
@@ -93,6 +95,7 @@
 }
 
 .header__navLogin,
+.header__navLogin2,
 .header__navBecomeSeller,
 .header__navMore,
 .header__navCart {
@@ -102,4 +105,14 @@
 
 .header a {
     text-decoration: none;
+}
+
+.header__cartCounter {
+    background-color: red;
+    padding: 3px;
+    border-radius: 50px;
+    border: 0.5px solid white;
+    font-size: 10px;
+    /* margin-bottom: 100px; */
+    margin-left: -5px;
 }

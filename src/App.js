@@ -4,8 +4,32 @@ import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import Cart from "./Cart";
+import { useEffect } from "react";
+import { auth } from "./firebase";
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  const [{}, dispatch] = useStateValue();
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      console.log("the user is", authUser);
+      if (authUser) {
+        //the user just logged in or was logged in
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        //the user is logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+    //it's kind of observer whenever we log in or log out it will observe our states changed
+  }, []);
+  //this is used to run only once
   return (
     <div className="app">
       <Routes>
