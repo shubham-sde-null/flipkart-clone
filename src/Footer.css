@@ -48,3 +48,51 @@
     padding-right: 8px;
     color: rgb(255, 191, 0);
 }
+
+@media (max-width: 500px) {
+    .footer {
+        height: auto;
+    }
+    .footer__info {
+        display: grid;
+        /* grid-template-columns: repeat(2, minmax(100px, min-content)); */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__mailUs {
+        margin-left: -65px;
+        border-left: none;
+        margin-right: none;
+        /* border: 1px solid red; */
+        padding-right: 0;
+        /* place-self: center; */
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top: 0.5px solid #fff;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+    .footer__address {
+        border-left: none;
+        margin-right: none;
+        /* border: 1px solid red; */
+        padding-right: 0;
+        /* place-self: center; */
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top: 0.5px solid #fff;
+    }
+    .footer__payment {
+        display: grid;
+        /* grid-template-columns: repeat(2, minmax(100px, min-content)); */
+        grid-template-columns: repeat(auto-fit, 1fr);
+        place-items: center;
+        padding-bottom: 25px;
+    }
+    .copyRight {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding-top: 25px;
+    }
+}

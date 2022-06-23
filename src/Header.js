@@ -15,7 +15,7 @@ function Header() {
   };
   console.log("this is header", user);
   return (
-    <div className="header">
+    <div className="header ">
       <NavLink to="/">
         <div className="header__logo">
           <img
@@ -24,12 +24,12 @@ function Header() {
           />
         </div>{" "}
       </NavLink>{" "}
-      <div className="header__search">
+      <div className="header__search ">
         <input type="text" placeholder="Search for products,brands and more" />
         <SearchIcon className="header__searchIcon" />
       </div>
       <div>
-        <div className="header__nav">
+        <div className="header__nav ">
           <NavLink to={!user && "/login"}>
             <div onClick={handleAuthentication} className="header__login">
               <span className="header__navLogin">

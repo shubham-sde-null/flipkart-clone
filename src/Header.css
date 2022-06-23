@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
-    height: 56px;
+    height: 70px;
     /* border: 2px solid red; */
     width: 100%;
     align-items: center;
@@ -115,4 +121,100 @@
     font-size: 10px;
     /* margin-bottom: 100px; */
     margin-left: -5px;
+}
+
+@media (max-width: 500px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        min-height: 9vh;
+        flex-direction: row;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        /* width: 20vw; */
+        /* width: auto; */
+        /* border: 0.5px solid red; */
+        /* margin-left: -150px;
+        margin-top: -40px; */
+        position: absolute;
+        left: -45px;
+        top: 0px;
+    }
+    .header__logo>img {
+        width: 100px;
+        height: 45px;
+    }
+    .header__search {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100vw;
+        padding: 0 10px;
+    }
+    .header__search>input {
+        width: 100%;
+        height: 25px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        padding-left: 14px;
+        padding-bottom: 7px;
+    }
+    .header__search>input::placeholder {
+        color: gray;
+        padding-left: 15px;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .header__searchIcon {
+        background-color: white;
+        /* border: 2px solid green; */
+        height: 25px !important;
+        margin-left: -5px;
+        border-radius: 2px;
+        color: rgb(40, 116, 240);
+        padding-right: 3px;
+    }
+    .header__nav {
+        /* border: 0.5px solid rgb(253, 5, 5); */
+        width: auto;
+        max-width: 50vw;
+        justify-content: center;
+        /* margin-top: -30px; */
+        /* margin-left: -150px; */
+        /* margin-right: 5px; */
+        /* padding: 1px 1px;
+        margin-left: 25px; */
+        flex-direction: row-reverse;
+        position: absolute;
+        left: 350px;
+        top: 10px;
+    }
+    .header__nav div {
+        margin-left: 0px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .header__more,
+    .header__becomeASeller,
+    .header__navCart,
+    .header__navLogin {
+        position: absolute;
+        opacity: 0;
+    }
+    .header__navLogin2 {
+        margin-right: 15px;
+    }
+    .header__cart::before {
+        content: "+";
+        margin-right: 20px;
+        color: rgb(40, 116, 240);
+        background-color: white;
+        padding: 1px;
+    }
 }

@@ -44,7 +44,10 @@ function Home() {
           </div>{" "}
           <div className="home__category">
             <img src="https://www.linkpicture.com/q/beauty_2.png" alt="" />
-            <p> Beauty, Toys and more </p>{" "}
+            <p>
+              {" "}
+              <span> Beauty, </span> Toys <span>and more</span>{" "}
+            </p>{" "}
           </div>{" "}
         </div>{" "}
         <BootSlider />
@@ -73,7 +76,7 @@ function Home() {
                 />{" "}
                 <Product
                   image="https://rukminim1.flixcart.com/image/150/150/l27wtjk0/office-set/q/i/7/-original-imagdhxdfgyazmhg.jpeg?q=70"
-                  title="Notebooks, Pens, Games And More"
+                  title="Notebooks, And More"
                   price={15}
                 />{" "}
                 <Product

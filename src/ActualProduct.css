@@ -26,3 +26,16 @@
 .actualProduct__price {
     color: #388e3c;
 }
+
+@media (max-width: 500px) {
+    .actualProducts {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: max-content;
+        margin-right: 10px;
+    }
+    .actualProduct__price {
+        align-self: center;
+        justify-self: center;
+    }
+}

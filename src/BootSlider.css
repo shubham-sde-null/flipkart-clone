@@ -10,3 +10,25 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .carousel {
+        width: 100vw;
+        /* border: 2px solid red; */
+        height: auto;
+        margin: 0;
+    }
+    .carousel img {
+        padding-top: 80px;
+        width: 100%;
+        object-fit: fill;
+        object-position: center;
+        height: 240px;
+        margin-top: -80px;
+    }
+}

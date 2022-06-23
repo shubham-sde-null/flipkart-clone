@@ -7,6 +7,7 @@ import Cart from "./Cart";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -70,20 +71,20 @@ function App() {
           }
         />{" "}
         <Route
+          path="/payment"
+          element={
+            <>
+              <Header />
+              <Payment />
+            </>
+          }
+        />{" "}
+        <Route
           path="/more"
           element={
             <>
               <Header />
               <h1> Welcome To The More Page </h1>{" "}
-            </>
-          }
-        />{" "}
-        <Route
-          path="/cart"
-          element={
-            <>
-              <Header />
-              <h1> Welcome Cart Page </h1>{" "}
             </>
           }
         />{" "}

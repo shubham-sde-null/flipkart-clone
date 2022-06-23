@@ -7,7 +7,7 @@ function BootSlider() {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block carousel__image"
+            className="carousel__image second__image"
             src="https://images.samsung.com/is/image/samsung/assets/in/offer/online/moonrise-madness/b2c-moonrise-madness-tv-1920x545-070622.jpg?$ORIGIN_JPG$"
             alt="First slide"
           />
@@ -18,7 +18,7 @@ function BootSlider() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block carousel__image"
+            className=" carousel__image "
             src="https://www.linkpicture.com/q/moto_1.png"
             alt="Second slide"
           />
